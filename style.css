@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.header{
+    margin: 60px auto;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 900px;
+}
+.header__logo {
+    transform: translateX(-870px);
+    color: #FFF;
+}
+.nav__link{
+    color: #FFF;
+    font-size: 14px;
+    padding-left: 25px;
+}
+.main {
+    position: relative;
+    transform: translateY(170px);
+    padding: 0 250px;
+}
+.main__title {
+    width: 883px;
+    height: 340px;
+    flex-shrink: 0;
+    
+    color: var(--text-1, #FAFAF9);
+    font-family: SF Pro Display;
+    font-size: 172px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 170px; /* 98.837% */
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    padding: 0px;
+
+    
+    left: -100px; /* Початкова позиція зліва за межами контейнера */
+    animation: slide-in 2s forwards;
+}
+@keyframes slide-in {
+    0% {
+      left: -100%; /* Початкове положення за межами екрану */
+    }
+    100% {
+        left: 0; /* Кінцеве положення на місці */
+        
+    }
+}
+.main__txt {
+    color: var(--text-2, rgba(239, 237, 232, 0.65));
+    padding: 30px 0 40px 0;
+    /* body-text */
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    letter-spacing: 0.5px;
+}
+.main__button {
+color: #FFF;
+font-family: Poppins;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: 22px; /* 122.222% */
+letter-spacing: 1px;
+display: inline-flex;
+padding: 24px 25px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 10px;
+background: #E6533C;
+}
+.main__image-1 {
+    top: 60px;
+    width: 320px;
+    right: 460px;
+    position: absolute;
+    animation: main__image-1 4s cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+@keyframes main__image-1{
+    0% {
+        right: -100px; /* Початкове положення за межами екрану */
+    }
+    100% {
+        right: 460px; /* Кінцеве положення на місці */
+    
+    }
+}
+.main__image-2 {
+}
+.main__image-3 {
+}
+.main__image-4 {
+}
+.play{
+    background-color: #E6533C;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    padding: 4px;
+    margin: auto;
+}
+.block__1 {
+    color: #fff; 
+    background-color: rgb(27, 25, 25);
+    width: 206px;
+    height: 96px;
+    border-radius: 25px;
+    margin-top: -160px;
+    transform: translateX(640px);
+    display: flex;
+    padding: 30px;
+    font-size: 25px;
+}
+.text-p {
+    transform: translateY(-10px);
+    margin-left: 10px;
+}
+.text-d {
+    font-size: 20px;
+    margin-top: 20px;
+    transform: translateX(-50px);
+    white-space: nowrap;
+    color: #fafaf95f;
+}
+@keyframes block__1{
+    0% {
+        transform: translateY(-10000px);
+    }
+    100% {
+        transform: translateY(0px);
+    
+    }
+}
